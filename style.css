@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background: linear-gradient(45deg, #FF9CE3 0%, #4AB3FF 100%);
+}
+.visible{
+    opacity: 1;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    /* background: magenta; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+
+}
+a{
+    width: 10%;
+    padding: 2%;
+    /* background: #111213; */
+    margin-left: 1%;
+    text-decoration: none;
+}
+.sign-in-sign-up{
+    background: rgba(255,255,255,0.4);
+    border: 1px solid white;
+    padding: 10%;
+    text-align: center;
+    
+    border-radius: 15px;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    font-size: 1.4rem;
+    cursor: pointer;
+
+}
+.homepageContainer{
+    height: 90vh;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main > div{
+    width: 50%;
+    /* background: chartreuse; */
+}
+.leftSection{
+    /* background: chartreuse; */
+    transform: translateY(-50%);
+}
+.heading{
+    font-size: 6rem;
+    letter-spacing: 2px;
+}
+.subHeading{
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+.RightSection{
+    /* background: chartreuse; */
+    transform: translateY(-9.4%);
+    display: flex;
+    justify-content: center;
+}
+.homepageIllustration{
+    width: 90%;
+}
+.circle1, .circle2{
+    z-index: -1;
+}
+.circle1{
+    background: chartreuse;
+    height: 70rem;
+    width: 70rem;
+    border-radius: 50%;
+    background: linear-gradient(30deg, #0094ff, #97FF57);
+    filter: blur(10px);
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    
+}
+.circle2{
+    background: chartreuse;
+    height: 55rem;
+    width: 55rem;
+    background: linear-gradient(-120deg, #FF57D0,#0D99FF);
+    border-radius: 50%;
+    filter: blur(5px);
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+}

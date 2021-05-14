@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    /* background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important; */
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: auto;
+    width: 100vw;
+    padding: 2%;
+    /* overflow: hidden; */
+    /* opacity: 0; */
+    /* transition: opacity 2s ease-out; */
+    background: linear-gradient(45deg, #FF9CE3 0%, #4AB3FF 100%);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.visible{
+    opacity: 1;
+}
+.welcomeUser{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 5%;
+}
+.navControls{
+    display: flex;
+    width: 50%;
+    /* background: black; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navOptions{
+    cursor: pointer;
+        width: 20%;
+        text-align: center;
+        font-size: 2.2rem;
+        background: rgba(255,255,255,0.4);
+        border: 1px solid white;
+        padding: 0.8%;
+        border-radius: 15px;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        font-size: 1.4rem;
+        margin: 1%;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+}
+main{
+    /* background: chartreuse; */
+    /* padding-bottom: 10%; */
+    padding: 2%;
+    height: 100%;
+    /* overflow: scroll; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2% 2%;
+    /* grid-template-rows: 30rem; */
+    /* display: flex;
+    gap: 20px 20px;
+    justify-content: center;
+    flex-wrap: wrap; */
+    /* display: grid;
+    grid-template-columns: 3fr 3fr 3fr; */
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    /* height: 100%; */
+    /* width: 25%; */
+    height: 40rem;
+    border-radius: 20px;
+    /* margin-left: 5%; */
+    border: 1px solid white;
+    /* margin-top: 2%; */
+    background: rgba(255,255,255,0.4);
+    padding: 1.5%;
+}
+.cardHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* background: chocolate; */
+}
+.cardHeading{
+    font-size: 2.3rem;
+
+}
+.editNote{
+    cursor: pointer;
+}
+.cardContent{
+    margin-top: 5%;
+    font-size: 1.5rem;
+    overflow: scroll;
+    color:rgb(97, 80, 80);
+    /* background: darkgray; */
+    padding: 5%;
+    height: 80%;
+    border-radius: 20px;
+    border : 1px solid white
+}
