@@ -51,6 +51,7 @@ body{
     height: 90%;
     padding-top: 3%;
 }
+
 .card{
     display: flex;
     flex-direction: column;
@@ -111,6 +112,7 @@ input{
 
 /* Notes Pages CSS*/
 .NoteBody{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
