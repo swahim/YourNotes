@@ -78,6 +78,7 @@ h1{
 }
 input{
     color: black;
+    text-align: center;
     font-size: 1.2rem;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -86,11 +87,15 @@ input{
     border: none;
     
 }
+input:focus{
+    outline : none;
+    border: 1px solid grey;
+}
 .heading{
     font-size: 3.5rem;
 }
 ::placeholder{
-    color: black;
+    color: grey;
 }
 .signInButton{
     background: rgba(255,255,255,0.4);
@@ -149,4 +154,35 @@ input{
 }
 .Button:hover{
     cursor: pointer;
+}
+.alertMessage{
+    
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    height: 8rem;
+    border-radius: 20px;
+    z-index: 2;
+    color: brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    
+    font-size: 2.5rem;
+    
+}
+
+.alertDiv.after{
+    opacity: 1;
+}
+.alertDiv{
+    width: 30%;
+    /* background:#4AB3FF; */
+    position: absolute;
+    top : 1%;
+    left: 50%;
+    opacity :0;
+    transform: translateX(-50%);
+    transition : all 2.5s ease-in;
 }

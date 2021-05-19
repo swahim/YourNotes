@@ -13,7 +13,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    height: auto;
+    height: 110vh;
     width: 100vw;
     padding: 2%;
     /* overflow: hidden; */
@@ -29,6 +29,13 @@ nav{
 }
 .visible{
     opacity: 1;
+}
+.welcome{
+    width: 30%;
+    /* background :rgb(97, 80, 80); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .welcomeUser{
     font-size: 4rem;
@@ -74,6 +81,11 @@ main{
     flex-wrap: wrap; */
     /* display: grid;
     grid-template-columns: 3fr 3fr 3fr; */
+}
+.cardContainer{
+    /* background:#4AB3FF; */
+    overflow: scroll;
+    height: 90vh;
 }
 .card{
     display: flex;
@@ -136,4 +148,35 @@ main{
 svg{
     height: 4rem;
     width: 4rem;
+}
+.alertMessage{
+    
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    height: 8rem;
+    border-radius: 20px;
+    z-index: 2;
+    color: brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    
+    font-size: 2.5rem;
+    
+}
+
+.alertDiv.after{
+    opacity: 0;
+}
+.alertDiv{
+    width: 30%;
+    /* background:#4AB3FF; */
+    position: absolute;
+    top : 1%;
+    left: 50%;
+    opacity :1;
+    transform: translateX(-50%);
+    transition : all 2.5s ease-in;
 }

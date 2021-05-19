@@ -3,7 +3,8 @@ const Useremail = document.querySelector(".signUpEmail");
 const Username = document.querySelector(".nameSignUp");
 const UserPassword = document.querySelector("#signUpPassword");
 const signInReEnterPassword = document.querySelector(".signInReEnterPassword");
-const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
+// const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
+const apiUrl = "http://localhost:8000";
 
 signUpButton.addEventListener("click", () => {
     if(UserPassword.value != signInReEnterPassword.value){
@@ -31,12 +32,22 @@ signUpButton.addEventListener("click", () => {
         }).then((result) => {
             const userdata = JSON.parse(result)
            const{token} = userdata
+           const alertMessageAfter = document.querySelector(".alertDiv");
+                alertMessageAfter.classList.add("after");
+                
+                const message = document.createElement("div");
+                message.classList.add("alertMessage");
+                message.innerHTML = `${userdata.message}`;
+                alertMessageAfter.appendChild(message);
+        
+                
             if(token) {
                 localStorage.setItem("jwt", token);
-                location.href = "Dashboard.html"
-
-            }else{
-                alert("sign up again");
+                // location.href = "Dashboard.html"
+                setTimeout(function(){
+                    
+                    location.href = "Dashboard.html";
+                },2000);
             }
             
         })
@@ -66,8 +77,25 @@ signInButton.addEventListener("click", () => {
         const userData = JSON.parse(result);
         // console.log(userData)
         const {token} = userData
+        const alertMessageAfter = document.querySelector(".alertDiv");
+                alertMessageAfter.classList.add("after");
+                
+                const message = document.createElement("div");
+                message.classList.add("alertMessage");
+                message.innerHTML = `${userData.message}`;
+                alertMessageAfter.appendChild(message);
+        
+                setTimeout(function(){
+                    
+                    alertMessageAfter.removeChild(message);
+                },2000);
+
+
         if(token){
         localStorage.setItem("jwt", token);
-        location.href = "Dashboard.html"}
-    })
+        
+                setTimeout(function(){
+                    location.href = "Dashboard.html";
+                },2000);
+    }})
 })

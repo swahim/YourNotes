@@ -59,9 +59,11 @@ createCard = (array) => {
     
 }
 
-const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
+// const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
+const apiUrl = "http://localhost:8000";
 const token = localStorage.getItem("jwt");
 window.addEventListener("load", () => {
+    
     if(token) {
         fetch(`${apiUrl}/note/getallnotes`, {
             method: "GET",
@@ -72,6 +74,23 @@ window.addEventListener("load", () => {
             return data.text()
         }).then((result) => {
             const notesData = JSON.parse(result);
+            // console.log(notesData);
+
+            // const alertMessageAfter = document.querySelector(".alertDiv");
+            // alertMessageAfter.classList.add("after")
+            // const message = notesData.message;
+            // const alertMessage = document.createElement("div");
+            // alertMessage.classList.add("alertMessage");
+            // alertMessage.innerHTML = `${message}`;
+            // alertMessageAfter.appendChild(alertMessage);
+            
+
+            const userName = notesData.name;
+            const welcomeUser = document.querySelector(".welcome");
+            const welcomeHeading =  document.createElement("div");
+            welcomeHeading.classList.add("welcomeUser");
+            welcomeHeading.innerHTML = `Welcome ${userName},`;
+            welcomeUser.appendChild(welcomeHeading);
             const array = notesData.data
             // console.log(array)
             array.forEach(element =>{
@@ -84,7 +103,6 @@ window.addEventListener("load", () => {
             }
             noteData.push(pushData);
             // console.log(pushData)
-            
             })
             createCard(noteData);
         })
@@ -94,3 +112,4 @@ const createNewNoteButton = document.querySelector(".newNote");
 createNewNoteButton.addEventListener("click", () => {
     location.href = "Createnotes.html";
 })
+

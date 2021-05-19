@@ -1,5 +1,6 @@
 const createButton = document.querySelector(".Button");
-const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
+// const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
+const apiUrl = "http://localhost:8000";
 const token = localStorage.getItem("jwt");
 createButton.addEventListener("click", () => {
     if(token) {
@@ -22,8 +23,18 @@ createButton.addEventListener("click", () => {
     
         }).then((res) => res.json()).then((data) => {
             if(data.message){
-                location.href = "Dashboard.html"
+                const alertMessageAfter = document.querySelector(".alertDiv");
+                alertMessageAfter.classList.add("after");
+                const message = document.createElement("div");
+                message.classList.add("alertMessage");
+                message.innerHTML = `${data.message}`;
+                alertMessageAfter.appendChild(message);
+                
+                setTimeout(function(){
+                    location.href = "Dashboard.html";
+                   },2000);
             }
         })
         
-}})
+}
+})
