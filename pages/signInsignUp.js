@@ -3,7 +3,7 @@ const Useremail = document.querySelector(".signUpEmail");
 const Username = document.querySelector(".nameSignUp");
 const UserPassword = document.querySelector("#signUpPassword");
 const signInReEnterPassword = document.querySelector(".signInReEnterPassword");
-const apiUrl = "http://localhost:8000";
+const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
 
 signUpButton.addEventListener("click", () => {
     if(UserPassword.value != signInReEnterPassword.value){

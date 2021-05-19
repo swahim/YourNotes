@@ -1,5 +1,5 @@
 const createButton = document.querySelector(".Button");
-const apiUrl = "http://localhost:8000";
+const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
 const token = localStorage.getItem("jwt");
 createButton.addEventListener("click", () => {
     if(token) {
