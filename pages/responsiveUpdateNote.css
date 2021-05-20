@@ -1,0 +1,55 @@
+@media screen and (max-width: 1280px){
+    .circle2{
+        display : none;
+    }
+}
+@media screen and (max-width:1160px){
+    .noteCard{
+        width: 40%;
+    }
+    .circle1{
+        left: -20%;
+    }
+}
+@media screen and (max-width:945px){
+    .noteCard{
+        width: 60%;
+    }
+    .alertDiv{
+        height: 100px;
+        width: 40%;
+    }
+    .alertMessage{
+        height: 50%;
+    }
+}
+@media screen and (max-width:723px){
+    .noteCard{
+        width: 60%;
+        height:70%;
+    }
+    html{
+        font-size:50%;
+    }
+}
+@media screen and (max-width:546px){
+    .noteCard{
+        width: 80%;
+        height: 60%;
+        margin-top: -30%;
+    }
+    .circle1{
+        height: 60rem;
+        width: 60rem;
+    }
+}
+@media screen and (max-width:571px){
+    .alertDiv{
+        width: 50%;
+    }
+}
+@media screen and (max-width:546px){
+    .alertMessage{
+        font-size: 1.6rem;
+    }
+}

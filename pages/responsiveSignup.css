@@ -1,0 +1,133 @@
+@media screen and (max-width: 1380px){
+    html{
+        font-size: 60%;
+    }
+    .signInCard{
+        height:50%;
+    }
+    
+    .card{
+        width: 110%;
+        height: 100%;
+    }
+    .signInButton{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1330px){
+    .circle2{
+        display: none;
+    }
+    .circle1{
+        left: -20%;
+    }
+    .card{
+        height: 70%;
+        width: 120%;
+    }
+    .mainContainer{
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width: 900px){
+    .mainContainer{
+        flex-direction: column;
+        /* background-color: green; */
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .left, .right{
+        display : flex;
+        align-items: center;
+        justify-content:center;
+        /* background: grey; */
+        width: 50%;
+        height: 40%;
+    }
+    .card{
+        width: 80%;
+        height: 100%;
+    }
+    body{
+        padding : 0;
+        
+    }
+    
+}
+@media screen and (max-width : 600px){
+
+    .left, .right{
+        display : flex;
+        align-items: center;
+        justify-content:center;
+        /* background: grey; */
+        width: 80%;
+        height: 40%;
+    }
+    .circle1{
+        height: 70rem;
+        width: 70rem;
+    }
+}
+@media screen and (max-width: 470px){
+    .circle1{
+        height: 50rem;
+        width: 50rem;
+    }
+    .left, .right{
+        display : flex;
+        align-items: center;
+        justify-content:center;
+        /* background: grey; */
+        width: 100%;
+        height: 40%;
+    }
+    .card{
+        width: 80%;
+        height: 100%;
+    }
+    .signUpCard{
+        height : 110%;
+
+    }
+}
+/* @media screen and (max-height: 420px){
+    .card{
+        width: 80%;
+        height: 150%;
+    }
+    .signUpCard{
+        margin-top: 5%;
+    }
+} */
+@media screen and (max-width: 850px){
+    .alertDiv{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px){
+    .alertDiv{
+        width: 50%;
+        
+    }
+}
+@media screen and (max-width: 470px){
+    .alertDiv{
+        width: 50%;
+        margin-top:2%;
+        height: 5%;
+    }
+    .alertMessage{
+        font-size:1.3rem;
+        height: 100%;
+        
+    }
+    .signInCard{
+        margin-top:10%;
+    }
+    
+}

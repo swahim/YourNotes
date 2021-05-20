@@ -59,8 +59,8 @@ createCard = (array) => {
     
 }
 
-// const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
-const apiUrl = "http://localhost:8000";
+const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
+// const apiUrl = "http://localhost:8000";
 const token = localStorage.getItem("jwt");
 window.addEventListener("load", () => {
     

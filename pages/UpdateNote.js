@@ -2,8 +2,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const noteId = urlParams.get("noteId");
 
 const token = localStorage.getItem("jwt");
-// const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
-const apiUrl = "http://localhost:8000";
+const apiUrl = "https://aqueous-anchorage-41923.herokuapp.com";
+// const apiUrl = "http://localhost:8000";
 
 let Noteheading = document.querySelector(".EnterHeading");
 let Notecontent = document.querySelector(".inputNote");

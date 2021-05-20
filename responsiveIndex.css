@@ -1,0 +1,148 @@
+@media screen and (max-width:1400px){
+    *{
+        /* background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important; */
+    }
+    body{
+        overflow:hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+    .homepageContainer{
+        overflow:hidden;
+    }   
+    nav{
+        width: 100%;
+    }
+    .sign-in-sign-up{
+        width: 120%;
+    }
+    main{
+        width : 100vw;
+        padding : 0%;
+    }
+    .circle2{
+        display : none;
+    }
+}
+
+@media screen and (max-width : 1220px){
+    html{
+        font-size:50%;
+    }
+    .leftSection{
+        margin-left: 1%;
+    }
+    /* .subHeading{
+        width: 80%;
+        text-align: center;
+    }
+    .heading{
+        text-align: center;
+        width: 80%;
+    } */
+    .circle1{
+        height: 60rem;
+        width: 60rem;
+    }
+    
+    .sign-in-sign-up{
+        /* background : white; */
+        width: 150%;
+}}
+
+@media screen and (max-width :1057px){
+    .RightSection > img{
+        height: 30rem;
+    }
+}
+@media screen and (max-width: 890px){
+    body{
+        padding-bottom: 1%;
+        height: 100vh;
+    }
+    .homepageContainer{
+        flex-direction: column;
+        /* background: grey; */
+        height: 100%;
+        justify-content: space-between;
+    }
+    .leftSection{
+        margin-top: 13%;
+        /* background:black; */
+        width: 80%;
+        text-align: center;
+    }
+    .RightSection{
+        margin-bottom: 10%;
+        /* background:green; */
+        width: auto;
+    }
+    .RightSection > img{
+        height: 40rem;
+        
+    }
+}
+@media screen and (max-width :720px){
+    nav{
+        /* background: green; */
+        display :flex;
+        
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .sign-in-sign-up{
+        height: 50%;
+        width: 10rem;
+        margin-left: 0;
+    }
+    .right{
+        display: none;
+    }
+    .circle1{
+        left: -20%;
+    }
+}
+
+@media screen and (max-width: 615px){
+    html{
+        font-size: 40%;
+    }
+    .RightSection > img{
+        height: 35rem;
+        margin-bottom: 10%;
+    }
+}
+@media screen and (max-width: 420px){
+    .RightSection > img{
+        height: 40rem;
+        margin-bottom: 30%;
+    }
+    .RightSection{
+        /* background: green; */
+        margin-bottom: 20%;
+        height: auto;
+    }
+    .sign-in-sign-up{
+        font-size: 2rem;
+        /* width: 30%;
+        background: green; */
+    }
+    body{
+        height: 100vh;
+    }
+    .leftSection{
+        margin-top: 30%;
+        /* background : green; */
+    }
+}
+@media screen and (max-width :380px){
+    .RightSection{
+        margin-bottom: 20%;
+        /* background : green; */
+    }
+    .homepageContainer{
+        justify-content: space-around;
+    }
+}

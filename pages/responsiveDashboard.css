@@ -1,0 +1,220 @@
+@media screen and (max-width: 1450px){
+    .welcome{
+        /* background-color: green; */
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .newNote{
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 1130px){
+    html{
+        font-size: 55%;
+    }
+    .cardContainer{
+        margin-top: 2%;
+    }
+    .card{
+        height: 50%;
+        padding-top:5%;
+    }
+    svg{
+        height: 3rem;
+    }
+    .cardHeading{
+        font-size:2rem;
+    }
+    .cardContent{
+        font-size: 1.4rem;
+    }
+    .deleteNote{
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width :1025px){
+    .newNote{
+        width: 27%;
+    }
+}
+
+@media screen and (max-width :950px){
+    .newNote{
+        width: 29%;
+    
+    }
+    svg{
+        height: 2.6rem;
+    }
+    .deleteNote{
+        height: 2.6rem;
+    }
+}
+
+@media screen and (max-width : 870px){
+    .welcomeUser{
+        font-size:4rem;
+    }
+    .newNote{
+        margin-right: -4%;
+    }
+    .alertDiv{
+        height: 100px;
+        /* background : black; */
+    }
+    .alertMessage{
+        height: 50%;
+        /* background : blue; */
+    }
+}
+
+@media screen and (max-width : 825px){
+    html{
+        font-size: 45%;
+    }
+    .card{
+        height: 40%;
+    }
+    svg{
+        height : 2.3rem;
+    }
+    .deleteNote{
+        height: 2.3rem;
+    }
+}
+@media screen and (max-width : 800px){
+    .left{
+        align-items: center;
+        width: 40%;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width :710px){
+    .newNote{
+        width: 30%;
+
+    }
+    .deleteNote{
+        height: 3rem;
+        /* background : aqua; */
+        width: 30%;
+    }
+}
+
+@media screen and (max-width : 668px){
+    .newNote{
+        width: 35%;
+    }
+}
+@media screen and (max-width :630px){
+    .cardContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 7% 3%;
+        overflow : scroll;
+        justify-items: center;
+        
+    }
+    .card{
+        height: 100%;
+    }
+    .welcomeUser{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width :568px){
+    .newNote{
+        width: 37%;
+    }
+    html{
+        font-size: 40%;
+    }
+    .alertDiv{
+        height: 70px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width : 490px){
+    nav{
+        /* background : green; */
+        display: flex;
+        flex-direction: column-reverse;
+        height:16%;
+    }
+    .welcome{
+        /* background : black; */
+        align-self: center;
+        width: 80%;
+        justify-content:center;
+    }
+    .navControls{
+        margin-top: 3%;
+        width: 80%;
+        justify-content: flex-end;
+        margin-right: 6%;
+        align-self: flex-end;
+    }
+    .welcomeUser{
+        font-size: 5rem;
+    }
+    .newNote{
+        margin-right: 4%;
+        width: 30%;
+    }
+    .cardContainer{
+        margin-top: 8%;
+        /* background : blue; */
+        height: fit-content;
+        padding-bottom:15%;
+    }
+    .card{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width : 435px){
+    html{
+        font-size:45%;
+    }
+    .welcomeUser{
+        font-size: 3.8rem;
+    }
+    .newNote{
+        width: 37%;
+    }
+    .card{
+        width: 90%;
+    }
+    .alertDiv{
+        width: 50%;
+    }
+    .alertMessage{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width :320px){
+    nav{
+        margin-top: 6%;
+    }
+    .newNote{
+        font-size:1rem;
+    }
+    .logOut{
+        font-size:1rem;
+    }
+    svg{
+        height: 16px;
+    }
+    .deleteNote{
+        height: 20px;
+    }
+    .left{
+        margin-right: 6%;
+    }
+    .welcomeUser{
+        font-size: 3rem;
+    }
+}
